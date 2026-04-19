@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 4s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["<HOST_IP_ADDRESS>:8000"] # HOST Addresss where you want to run prometheus
